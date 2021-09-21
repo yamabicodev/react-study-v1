@@ -1,7 +1,8 @@
 import React from "react";
 
 // propsを受け取るように修正
-const ColorfulMessage = (props) => {
+export const ColorfulMessage = (props) => {
+  console.log("ColorfulMessage start");
   // 分割代入が利用できる。
   const { color, children, message } = props;
   const cotentBlueStyle = {
@@ -23,4 +24,4 @@ const ColorfulMessage = (props) => {
   );
 };
 
-export default ColorfulMessage;
+// export default ColorfulMessage;
